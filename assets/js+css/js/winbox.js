@@ -4,31 +4,33 @@ function openApp(app) {
     case "browser":
       newWinbox(
         "Browser",
-        "files/images/app_icons/browser.png",
+        "assets/images/app_icons/browser.png",
         "https://bing.com"
       );
       break;
     case "calculator":
-      newWinbox(
-        "Calulator",
-        "files/images/app_icons/calculator.png",
-        "files/apps/calculator/index.html",
-        "343px",
-        "525px"
-      );
+      let winbox = new WinBox("Calulator", {
+        class: ["theme", "no-full", "no-max"],
+        icon: "assets/images/app_icons/calculator.png",
+        url: "assets/apps/calculator/index.html",
+        x: "center",
+        y: "center",
+        width: "343px",
+        height: "525px"
+      });
       break;
     case "camera":
       newWinbox(
         "Camera",
-        "files/images/app_icons/camera.png",
-        "files/apps/camera/camera.html"
+        "assets/images/app_icons/camera.png",
+        "assets/apps/camera/camera.html"
       );
       break;
     case "eaglercraft":
       newWinbox(
         "Eaglercraft",
-        "files/images/app_icons/eagler.png",
-        "files/Offline_Download_Version.html",
+        "assets/images/app_icons/eagler.png",
+        "assets/Offline_Download_Version.html",
         "100%",
         "100%"
       );
@@ -43,6 +45,6 @@ function newWinbox(name, icon, link, w, h) {
     x: "center",
     y: "center",
     width: w,
-    height: h,
+    height: h
   });
 }

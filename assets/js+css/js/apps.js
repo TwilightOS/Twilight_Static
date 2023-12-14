@@ -123,7 +123,7 @@ function appInfo(app){
   for(let i=0; i<downloaded_apps.length; i++ ){
     if (app == downloaded_apps[i]){
       let info = new WinBox({
-        class: "theme",
+        class: ["no-full", "no-max", "theme"],
         title: "App Info ("+appList[i].name+")",
         icon:"assets/images/other/icon.png",
         x: "center",
