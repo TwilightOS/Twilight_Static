@@ -1,0 +1,196 @@
+/* Windows 11 Calculator with Dark Mode, Slide-in Menu and Click to Copy - HTML, CSS & JavaScript
+Follow me on;
+Twitter: https://twitter.com/ericaimhigh
+Instagram: https://instagram.com/@ericaimhigh_
+Threads: https://threads.net/@ericaimhigh_
+*/
+
+@import url("https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  align-items: center;
+  font-family: poppins;
+}
+
+body {
+  --color: #000;
+  --bg-color: #f8f8f8;
+  --btn-bg: #f8f8f8;
+  --white: #fff;
+  --gray: #383838;
+  --off: #949494;
+  --hover-color: #e6e6e6;
+  --close: #fff;
+  --red: #f22;
+  --blue: #004ec2;
+  --border-color: #d4d4d4;
+  color: var(--color);
+  background: var(--white);
+  z-index: 20;
+}
+
+body.dark {
+  /* --color: #3cff00; */
+  --color: #fff;
+  --bg-color: #323232;
+  --btn-bg: #3d3d3d;
+  --white: #3b3b3b;
+  --gray: #cfcfcf;
+  --close: #dfdfdf;
+  --hover-color: #494949;
+  --red: #f22;
+  --blue: #ffffff;
+  --border-color: #2e2e2e;
+  color: var(--color);
+}
+
+.container {
+  height: 480px;
+  width: 320px;
+  border: 1px solid var(--border-color);
+  border-radius: 2%;
+  background: var(--bg-color);
+  overflow: hidden !important;
+}
+
+.container ~ .container .menu.active {
+  background: #ff0000;
+}
+
+
+.title-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10px;
+  margin-bottom: 8px;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  padding: 0 10px;
+  margin-bottom: 4px;
+}
+
+.options .a i.fa-bars {
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: all 0.8 ease-in-out;
+}
+
+.options .a i.fa-bars:hover {
+  background: var(--hover-color);
+}
+
+.options i.fa-sun-alt {
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.b {
+  cursor: pointer;
+}
+
+input {
+  width: calc(100% - 20px);
+  margin: 0 10px;
+  text-align: right;
+  border: 0px;
+  background: #ffffff00;
+  color: var(--color);
+}
+
+input.display {
+  height: 45px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  font-size: 2.8rem;
+  font-weight: 600;
+}
+
+.memory {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8px;
+  margin-bottom: 2px;
+}
+
+.memory .mry {
+  width: 20%;
+  height: 30px;
+  padding: 1px;
+  font-size: 0.8rem;
+  border: none;
+  border-radius: 4px;
+  background: none;
+  transition: all 0.2s ease;
+  color: var(--color);
+}
+
+.memory .mry:hover {
+  background: var(--hover-color);
+}
+
+.memory .mry.off {
+  color: var(--off);
+}
+
+.memory .mry.off:hover {
+  background: none;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-evenly;
+  padding: 0 5px;
+  gap: 0;
+}
+
+.btn {
+  display: grid;
+  height: 46px;
+  margin: 0;
+  width: 75px;
+  margin-top: 3px;
+  background: var(--btn-bg);
+  border: 1px solid var(--border-color);
+  justify-content: space-around;
+  border-radius: 5px;
+  color: var(--color);
+}
+
+.btn:hover {
+  background: var(--hover-color);
+}
+
+.btn.num {
+  font-size: 1.12rem;
+  background: var(--hover-color);
+}
+
+.btn.num:hover {
+  background: var(--btn-bg);
+}
+
+.eq {
+  background: var(--blue);
+  color: var(--white);
+}
+
+.eq:hover {
+  background: var(--blue);
+  color: var(--white);
+}
+
+.btn:active {
+  /* background: red; */
+  opacity: 0.5;
+}

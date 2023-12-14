@@ -1,0 +1,103 @@
+.sidenav{
+  position: absolute;
+  width: 3.5vw;
+  height: 90vh;
+  border-radius: 20px;
+  top: 1vh;
+  left:-3.3vw;
+  transition: all 0.2s ease-out;
+  background-color: #2A132F;
+  opacity: 0.9;
+  border: 2px solid #441E4B;
+  z-index: 100;
+}
+
+.sidenav:hover{
+  transform: translateX(3.3vw);
+}
+
+.sidenav_show{
+  transform: translateX(3.3vw);
+}
+
+.sidenav button{
+  font-size: 1vw;
+  cursor: pointer;
+  color:white;
+  background-color: #441E4B;
+  border-radius: 50%;
+  border: none;
+  z-index: 100;
+}
+
+.sidenav_apps{
+  position: absolute;
+  height: 80vh;
+  width: 3vw;
+  top: 9vh;
+  left: 0.2vw; 
+}
+
+.sidenav_apps img{
+  width: 2.5vw;
+  height: 2.5vw;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  margin-left: 0.5vh;
+  transition: all 0.2s ease-in;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+}
+.sidenav_apps img:hover{
+  transform: scale(1.2);
+}
+
+.sidenav_apps_wrapper{
+  display: grid;
+  grid-template-columns: 4vw;
+  grid-template-rows: 4vw 4vw 4vw 4vw 4vw 4vw 4vw 4vw;
+  overflow-y: scroll;
+  height: 80vh;
+  width: 4vw;
+  border-radius: 5%;
+}
+.sidenav_apps_wrapper:hover{
+  width: 12vw;
+}
+.sidenav_apps_wrapper::-webkit-scrollbar{
+  display: none;
+}
+
+.sidenav_open_content_apps{
+  display: grid;
+  grid-template-columns: 5.5vw 5.5vw 5.5vw 5.5vw;
+  row-gap: 0;
+  position: absolute;
+  top: 10vh;
+  width: 95%;
+  overflow-y: scroll;
+  padding-left: 1.5vw;
+}
+
+.sidenav_open_content_apps p{ 
+  font-family:Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 0.9vw;
+  margin:0;
+  text-align: center;
+}
+
+.sidenav_open_content_apps img{
+  width: 3.6vw; 
+  height: 3.6vw;
+  margin: 1vw 0vw 0vw 0.6vw;
+  transition: all 0.2s ease-in;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.sidenav_open_content_apps img:hover{
+  transform: scale(1.1);
+}

@@ -1,0 +1,64 @@
+ul {
+  list-style: none;
+}
+
+.context-menu{
+  position: absolute;
+  z-index: 1000;
+  margin: 0;
+  height: 0;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  background-color: #2A132F;
+  padding: 0;
+  border: 2px solid #441E4B;
+}
+
+.menu>li {
+  font: inherit;
+  border: 0;
+  padding: 0.8vw;
+  display: flex;
+  align-items: center;
+  position: relative;
+  text-decoration: unset;
+  color: white;
+  font-size: 1.1vw;
+  cursor: pointer;
+}
+
+.menu>li:hover {
+  background-color: #441E4B;
+}
+
+.menu>li>i {
+  padding-right: 0.8vw;
+}
+
+.menu>li.trash:hover {
+  color: red;
+}
+
+/*app info window*/
+.app_info{
+  padding: 20px;
+  color: white;
+}
+
+#info_app_name{
+  margin-left: 10px;
+}
+
+#info_app_icon{
+  width: 20%;
+  height: auto;
+  border-radius: 10%;
+  margin: 15px 0 0 10px;
+  float: right;
+}
+
+

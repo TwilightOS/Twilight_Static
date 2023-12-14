@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TwilightOS</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hint.css@2.7.0/hint.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css">
+        <link href="assets/js+css/css/winbox.css" rel="stylesheet"> 
+        <link href="assets/js+css/css/main.css" rel="stylesheet"> 
+        <link href="assets/js+css/css/sidenav.css" rel="stylesheet"> 
+        <link href="assets/js+css/css/contextMenu.css" rel="stylesheet"> 
+        <script src="assets/js+css/js/apps.js"></script>
+        <script src="assets/js+css/js/main.js"></script>
+        <script src="assets/js+css/js/sidenav.js"></script>
+        <script src="assets/js+css/js/contextMenu.js"></script>
+        <script src="assets/js+css/js/winbox.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/winbox@0.2.82/dist/winbox.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/xterm/3.14.5/xterm.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+    </head>
+    <body style="background-image: url(assets/images/bg/twilightbg.jpg); background-size: cover; background-position: center center; background-repeat: no-repeat; background-attachment: fixed;">
+        <div id="sidenav" class="sidenav" style="width: 3.5vw;" onmouseleave="sidenav(1);">
+            <button style="position: absolute; left: 0.2vw; top:0.3vw; width: 3vw; height:3vw;" class="sidenav_btn" onclick="sidenav();"><i class="fa-regular fa-circle fa-lg"></i></button>
+            <div id="sidenav_open_content" class="sidenav_open_content" style="display: none;">
+                <input id="sidenav_appsearch" onkeyup="filter();" style="position: absolute; left: 3.5vw; top:1vh; height: 3.5vw; width: 75%; padding: 0 3% 0 3%; border: none; background-color: transparent; color:white; font-size: 1.3vw; letter-spacing: 1px; outline: none;" placeholder="Search Apps:"/>
+                <hr style="position: absolute; top:3.5vw; left: 0.4vw; border:solid 0.5px #4E2C5D;" width="95%">
+                <div id="sidenav_open_content_apps" class="sidenav_open_content_apps">
+                    <div class="hint--no-arrow sidenav_open_app"><img src="assets/images/app_icons/appstore.png" alt="appstore"><p>App Store</p></div>
+                    <div onclick="openApp('browser');" class="hint--no-arrow sidenav_open_app"><img src="assets/images/app_icons/browser.png" alt="browser"><p>Browser</p></div>
+                    <div onclick="openApp('calculator');" class="hint--no-arrow sidenav_open_app"><img src="assets/images/app_icons/calculator.png" alt="calculator"><p>Calculator</p></div>
+                    <div class="hint--no-arrow sidenav_open_app"><img src="assets/images/app_icons/camera.png" alt="camera"><p>Camera</p></div>
+                    <div onclick="openApp('eaglercraft');" class="hint--no-arrow sidenav_open_app"><img src="assets/images/app_icons/eagler.png" alt="eaglercraft"><p>Eaglercraft</p></div>
+                    <div class="hint--no-arrow sidenav_open_app"><img src="assets/images/app_icons/files.png" alt="files"><p>Files</p></div>
+                    <div class="hint--no-arrow sidenav_open_app"><img src="assets/images/app_icons/mail.png" alt="mail"><p>Mail</p></div>
+                    <div class="hint--no-arrow sidenav_open_app"><img src="assets/images/app_icons/maps.png" alt="maps"><p>Maps</p></div>
+                    <div class="hint--no-arrow sidenav_open_app"><img src="assets/images/app_icons/settings.png" alt="settings"><p>Settings</p></div>
+                    <div class="hint--no-arrow sidenav_open_app"><img src="assets/images/app_icons/terminal.png" alt="terminal"><p>Terminal</p></div>
+                    <div class="hint--no-arrow sidenav_open_app"><img src="assets/images/app_icons/vscode.png" alt="vscode"><p>VScode</p></div>
+                    <div class="hint--no-arrow sidenav_open_app"><img src="assets/images/app_icons/weather.png" alt="weather"><p>Weather</p></div>
+                    <div class="hint--no-arrow sidenav_open_app"><img src="assets/images/app_icons/youtube.png" alt="youtube"><p>Youtube</p></div>
+                </div>
+            </div>
+            <div id="sidenav_apps" class="sidenav_apps">
+                <div id="sidenav_apps_wrapper" class="sidenav_apps_wrapper">
+                    <div onclick="" class="hint--right sidenav_app" aria-label="App Store"><img src="assets/images/app_icons/appstore.png"></div>
+                    <div onclick="openApp('browser');" class="hint--right sidenav_app" aria-label="Browser"><img src="assets/images/app_icons/browser.png"></div>
+                    <div onclick="openApp('calculator');" class="hint--right sidenav_app" aria-label="Calculator"><img src="assets/images/app_icons/calculator.png"></div>
+                    <div onclick="openApp('camera');" class="hint--right sidenav_app" aria-label="Camera"><img src="assets/images/app_icons/camera.png"></div>
+                    <div onclick="openApp('eaglercraft');" class="hint--right sidenav_app" aria-label="Eaglercraft"><img src="assets/images/app_icons/eagler.png"></div>
+                    <div class="hint--right sidenav_app" aria-label="Files"><img src="assets/images/app_icons/files.png"></div>
+                    <div class="hint--right sidenav_app" aria-label="Mail"><img src="assets/images/app_icons/mail.png"></div>
+                    <div class="hint--right sidenav_app" aria-label="Maps"><img src="assets/images/app_icons/maps.png"></div>
+                    <div class="hint--right sidenav_app" aria-label="Settings"><img src="assets/images/app_icons/settings.png"></div>
+                    <div class="hint--right sidenav_app" aria-label="Terminal"><img src="assets/images/app_icons/terminal.png"></div>
+                    <div class="hint--right sidenav_app" aria-label="VScode"><img src="assets/images/app_icons/vscode.png"></div>
+                    <div class="hint--right sidenav_app" aria-label="Weather App"><img src="assets/images/app_icons/weather.png"></div>
+                    <div class="hint--right sidenav_app" aria-label="Youtube"><img src="assets/images/app_icons/youtube.png"></div>
+                    <script>
+                        //to find out which app has been right clicked
+                        Array.from(sidenav_apps).forEach((element) => { //adds event listener for each element in the sidenav
+                          element.addEventListener("contextmenu", (e) => {
+                            rightClick(e);
+                            $('sidenav').classList.add("sidenav_show");
+                            window.localStorage.setItem("a",  element.ariaLabel.split(" ").join("").toLowerCase());
+                            window.localStorage.setItem("b",  element.ariaLabel);
+                        });
+                        });
+                    </script>
+                </div>
+            </div>
+        </div>
+        <div id="contextMenu" class="context-menu" style="display: none"> 
+            <ul class="menu">
+              <li onclick="app_contextMenu('appInfo');"><i class="fa fa-share" aria-hidden="true"></i>App Info</li>
+              <li onclick="app_contextMenu('open');"><i class="fa fa-pencil" aria-hidden="true"></i>Open</li>
+              <li onclick="app_contextMenu('delete');" class="trash"><i class="fa fa-trash" aria-hidden="true"></i> Uninstall</li>
+            </ul>
+          </div>
+        <footer style="position: fixed; bottom:2vh; right:5vw;">
+            <p onclick="window.localStorage.removeItem('apps'); location.reload();" style="cursor: pointer; font-family: 'Poppins', sans-serif; font-size:3vh; color:white;">Twilight<strong>OS</strong></p>
+        </footer>
+    </body>
+</html>

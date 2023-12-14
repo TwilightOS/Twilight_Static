@@ -1,0 +1,25 @@
+///////////////////////////////////////
+
+            TwilightOS
+
+//////////////////////////////////////
+
+To get the best experience, open this up on a "Chromebook 3100 2-in-1".
+
+
+Hover left of the browser to show the sidenav. 
+
+You can:
+  -Search for apps when you click on the circle at the top in the sidenav.
+  -Open apps by clicking on them(only the browser, calculator, camera, and eaglercraft work for now).
+  -Right-click on one of the apps to show a menu where you can open the app, uninstall the app, or get info about it(there is info for all the apps).
+  -Click the text "TwilightOS" at the bottom right corner to reset the apps if you deleted to much of them.
+
+
+Credits:
+  -Fontawesome
+  -Hint.css
+  -Winbox.js
+  -Alertifyjs
+  -Google Web Fonts
+  -Images are all made by me on canva.com .

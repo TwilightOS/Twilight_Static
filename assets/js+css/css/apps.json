@@ -1,0 +1,80 @@
+[
+  {
+    "name": "App Store",
+    "date": "9/01/23",
+    "description": "Still in developement...",
+    "size": "NaN"
+  },
+  {
+    "name": "Browser",
+    "date": "9/01/23",
+    "description": "Microsoft Bing! In later updates, we will add a real browser app with tabs, not just 1 bing.com page.",
+    "size": "114 bytes"
+  },
+  {
+    "name": "Calculator",
+    "date": "9/01/23",
+    "description": "The ultimate calculator app! Some parts are still in development, inspired by the Microsoft calculator app!",
+    "size": "11.9 kB"
+  },
+  {
+    "name": "Camera",
+    "date": "9/01/23",
+    "description": "A very simple camera app with only 1 button! Download the image by taking a photo, then right clicking on the image in the top right corner and clicking 'open image in new tab'. The right click that image and click 'save image as'.",
+    "size": "12 kB"
+  },
+  {
+    "name": "Eaglercraft",
+    "date": "9/01/23",
+    "description": "Minecraft 1.5.2 right in side this webOS! How nice is that? To enable keys(wasd), open the app then immediatly clicking in the middle of the window and type random letters. This is the only way for it to detect keypress(a very weird bug that we have yet to fix).",
+    "size": "15.8 MB"
+  },
+  {
+    "name": "Files",
+    "date": "9/01/23",
+    "description": "We will probaly not make a file app because there is one right on your own operating system. But we might change our minds in future updates!",
+    "size": "NaN"
+  },
+  {
+    "name": "Mail",
+    "date": "9/01/23",
+    "description": "Just plain old regular Gmail(thanks Google!).",
+    "size": "NaN"
+  },
+  {
+    "name": "Maps",
+    "date": "9/01/23",
+    "description": "Google Maps!!! Comment in our future Discord server if you want us to change it to Google Earth!",
+    "size": "NaN"
+  },
+  {
+    "name": "Settings",
+    "date": "9/01/23",
+    "description": "Customize this webOS to your own taste! Unfortunatly, you cannot change the color scheme nor the background image:(",
+    "size": "NaN"
+  },
+  {
+    "name": "Terminal",
+    "date": "9/01/23",
+    "description": "Thank you Xterm.js! Thank you for letting us create a terminal right in the browser!",
+    "size": "NaN"
+  },
+  {
+    "name": "VScode",
+    "date": "9/01/23",
+    "description": "This is the software we made TwilightOS on!",
+    "size": "NaN"
+  },
+  {
+    "name": "Weather App",
+    "date": "9/01/23",
+    "description": "The most accurate weather app of all time! For people who are to lazy to search up what the weather is.",
+    "size": "NaN"
+  },
+  {
+    "name": "Youtube",
+    "date": "9/01/23",
+    "description": "The #1 video streaming platform right in the webOS! IDK why you open this in here rather then on an actual browser.",
+    "size": "NaN"
+  }
+]
