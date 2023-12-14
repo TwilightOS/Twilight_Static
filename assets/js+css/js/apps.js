@@ -8,91 +8,91 @@ const appJSON = `[
     "date": "9/01/23",
     "description": "Still in developement...",
     "size": "NaN",
-    "icon": "files/images/app_icons/appstore.png"
+    "icon": "assets/images/app_icons/appstore.png"
   },
   {
     "name": "Browser",
     "date": "9/01/23",
     "description": "Microsoft Bing! In later updates, we will add a real browser app with tabs, not just 1 bing.com page.",
     "size": "114 bytes",
-    "icon": "files/images/app_icons/browser.png"
+    "icon": "assets/images/app_icons/browser.png"
   },
   {
     "name": "Calculator",
     "date": "9/01/23",
     "description": "The ultimate calculator app! Some parts are still in development, inspired by the Microsoft calculator app!",
     "size": "11.9 kB",
-    "icon": "files/images/app_icons/calculator.png"
+    "icon": "assets/images/app_icons/calculator.png"
   },
   {
     "name": "Camera",
     "date": "9/01/23",
     "description": "A very simple camera app with only 1 button! Download the image by taking a photo, then right clicking on the image in the top right corner and clicking 'open image in new tab'. Then right click that image and click 'save image as'.",
     "size": "12 kB",
-    "icon": "files/images/app_icons/camera.png"
+    "icon": "assets/images/app_icons/camera.png"
   },
   {
     "name": "Eaglercraft",
     "date": "9/01/23",
     "description": "Minecraft 1.5.2 right in side this webOS! How nice is that? To enable keys(wasd), open the app then immediatly clicking in the middle of the window and type random letters. This is the only way for it to detect keypress(a very weird bug that we have yet to fix).",
     "size": "15.8 MB",
-    "icon": "files/images/app_icons/eagler.png"
+    "icon": "assets/images/app_icons/eagler.png"
   },
   {
     "name": "Files",
     "date": "9/01/23",
     "description": "We will probaly not make a file app because there is one right on your own operating system. But we might change our minds in future updates!",
     "size": "NaN",
-    "icon": "files/images/app_icons/files.png"
+    "icon": "assets/images/app_icons/files.png"
   },
   {
     "name": "Mail",
     "date": "9/01/23",
     "description": "Just plain old regular Gmail(thanks Google!).",
     "size": "NaN",
-    "icon": "files/images/app_icons/mail.png"
+    "icon": "assets/images/app_icons/mail.png"
   },
   {
     "name": "Maps",
     "date": "9/01/23",
     "description": "Google Maps!!! Comment in our future Discord server if you want us to change it to Google Earth!",
     "size": "NaN",
-    "icon": "files/images/app_icons/maps.png"
+    "icon": "assets/images/app_icons/maps.png"
   },
   {
     "name": "Settings",
     "date": "9/01/23",
     "description": "Customize this webOS to your own taste! Unfortunatly, you cannot change the color scheme nor the background image:(",
     "size": "NaN",
-    "icon": "files/images/app_icons/settings.png"
+    "icon": "assets/images/app_icons/settings.png"
   },
   {
     "name": "Terminal",
     "date": "9/01/23",
     "description": "Thank you Xterm.js! Thank you for letting us create a terminal right in the browser!",
     "size": "NaN",
-    "icon": "files/images/app_icons/terminal.png"
+    "icon": "assets/images/app_icons/terminal.png"
   },
   {
     "name": "VScode",
     "date": "9/01/23",
     "description": "This is the software we made TwilightOS on!",
     "size": "NaN",
-    "icon": "files/images/app_icons/vscode.png"
+    "icon": "assets/images/app_icons/vscode.png"
   },
   {
     "name": "Weather App",
     "date": "9/01/23",
     "description": "The most accurate weather app of all time! For people who are too lazy to search up what the weather is.",
     "size": "NaN",
-    "icon": "files/images/app_icons/weather.png"
+    "icon": "assets/images/app_icons/weather.png"
   },
   {
     "name": "Youtube",
     "date": "9/01/23",
     "description": "The #1 video streaming platform right in the webOS! IDK why you would open this in here rather then on an actual browser.",
     "size": "NaN",
-    "icon": "files/images/app_icons/youtube.png"
+    "icon": "assets/images/app_icons/youtube.png"
   }
 ]`;
 //load apps
@@ -125,7 +125,7 @@ function appInfo(app){
       let info = new WinBox({
         class: "theme",
         title: "App Info ("+appList[i].name+")",
-        icon:"files/images/other/icon.png",
+        icon:"assets/images/other/icon.png",
         x: "center",
         y: "center",
         width: "343px",
